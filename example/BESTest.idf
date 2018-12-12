@@ -1,0 +1,3150 @@
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:VERSAO ===========
+
+  Domus:Versao,
+    1.0;                      !- Identificador da versao
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PROJETO ===========
+
+  Domus:Projeto,
+    Sem nome,                 !- Autor do projeto
+    Sem endereço,             !- Endereco do projeto
+    Breve descrição do projeto, !- Descricao do projeto
+    BESTest,                  !- Nome da edificacao
+    1978,                     !- Ano da edificacao
+    2011;                     !- Ano do projeto
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PARAMETROSGERAIS ===========
+
+  Domus:ParametrosGerais,
+    1,                        !- Tempo de simulacao - mes inicial
+    1,                        !- Tempo de simulacao - dia inicial
+    0,                        !- Tempo de simulacao - Hora inicial
+    0,                        !- Tempo de simulacao - Segundo inicial
+    1,                        !- Tempo de simulacao - mes final
+    31,                       !- Tempo de simulacao - dia final
+    23,                       !- Tempo de simulacao - Hora final
+    0,                        !- Tempo de simulacao - Segundo final
+    1,                        !- Tempo de relatorio - mes inicial
+    1,                        !- Tempo de relatorio - dia inicial
+    0,                        !- Tempo de relatorio - Hora inicial
+    0,                        !- Tempo de relatorio - Segundo inicial
+    1,                        !- Tempo de relatorio - mes final
+    31,                       !- Tempo de relatorio - dia final
+    23,                       !- Tempo de relatorio - Hora final
+    0,                        !- Tempo de relatorio - Segundo final
+    1,                        !- Ferias 1 - Ativada
+    0,                        !- Ferias 2 - Ativada
+    0,                        !- Ferias 3 - Ativada
+    1,                        !- Ferias 1 Inicio - Dia
+    1,                        !- Ferias 1 Inicio - Mes
+    1,                        !- Ferias 2 Inicio - Dia
+    7,                        !- Ferias 2 Inicio - Mes
+    1,                        !- Ferias 3 Inicio - Dia
+    10,                       !- Ferias 3 Inicio - Mes
+    31,                       !- Ferias 1 Fim - Dia
+    1,                        !- Ferias 1 Fim - Mes
+    15,                       !- Ferias 2 Fim - Dia
+    7,                        !- Ferias 2 Fim - Mes
+    15,                       !- Ferias 3 Fim - Dia
+    10,                       !- Ferias 3 Fim - Mes
+    3600,                     !- Warmup - passo de tempo normal
+    600,                      !- Warmup - passo de tempo fino
+    7,                        !- Warmup - dias - normal
+    1,                        !- Warmup - dias - fino
+    0,                        !- Warmup - com ajuste fino
+    0.01,                     !- Coeficiente convecao do solo
+    60,                       !- Passo de tempo
+    2018,                     !- Ano da simulacao
+    0.02,                     !- Criterio de convergencia - temperatura
+    0.02,                     !- Criterio de convergencia - umidade
+    15,                       !- Numero maximo de iteracoes
+    0.2,                      !- Refletividade do solo
+    0,                        !- Constante do solo
+    20,                       !- Temperatura do solo
+    0.75,                     !- Umidade do solo
+    1,                        !- Solo adiabatico 
+    0,                        !- Habilita infiltracao
+    1,                        !- Habilita ventilacao natural
+    1.1614,                   !- Massa especifica do ar
+    Rondonópolis_b.dwf,       !- Arquivo climatico padrao
+    teste.sol,                !- Arquivo climatico do solo
+    0,                        !- Configuracao do Bestest
+    0,                        !- Repeticao de anos
+    0,                        !- Usar clima senoidal
+    20,                       !- Clima senoidal externo - temperatura media
+    5,                        !- Clima senoidal externo - amplitude pico anual temperatura
+    5,                        !- Clima senoidal externo - amplitude pico diaria temperatura
+    60,                       !- Clima senoidal externo - umidade media
+    10,                       !- Clima senoidal externo - amplitude pico diaria temperatura
+    1000,                     !- Clima senoidal externo - amplitude maxima anual radiacao
+    500,                      !- Clima senoidal externo - variacao amplitude pico radiacao
+    3,                        !- Ventilacao natural - modelo
+    0,                        !- Ventilacao natural - Tipo calculo do CP
+    2,                        !- Ventilacao natural - Indice do coeficiente A
+    2.5,                      !- Ventilacao natural - Altura das edificacoes ao redor
+    0,                        !- Ventilacao natural - Densidade de edificacoes ao redor
+    100,                      !- Grid 2D (interface velha)
+    0,                        !- Simular RTQ
+    0,                        !- RTQ
+    6,                        !- Zona bioclimatica
+    1,                        !- Utilizar contagem de pixels
+    50,                       !- Numero maximo de zonas simulaveis
+    0,                        !- Salvar estado da simulacao ao terminar
+    0,                        !- Carregar o estado da simulacao ao comecar (se disponivel)
+    6,                        !- Numero de feriados
+    0,                        !- Dia do ano do feriado 1
+    120,                      !- Dia do ano do feriado 2
+    249,                      !- Dia do ano do feriado 3
+    284,                      !- Dia do ano do feriado 4
+    305,                      !- Dia do ano do feriado 5
+    358;                      !- Dia do ano do feriado 6
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:TOTALENTIDADESGEOMETRICAS ===========
+
+  Domus:TotalEntidadesGeometricas,
+    20,                       !- Numero de vertices
+    20,                       !- Numero de p-vertices
+    28,                       !- Numero de arestas
+    60,                       !- Numero de p-arestas
+    15,                       !- Numero de lacos
+    13,                       !- Numero de faces
+    26,                       !- Numero de p-faces
+    4,                        !- Numero de shells
+    3,                        !- Numero de regioes
+    24,                       !- Numero de pontos
+    4,                        !- Numero de curvas
+    13,                       !- Numero de superficies
+    3;                        !- Numero de volumes
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE ===========
+
+  Domus:Face,
+    1,                        !- Identificador da face
+    1,                        !- Referencia para uma das p-faces associadas
+    1,                        !- Referencia para o laco associado
+    1,                        !- Referencia para a superficie associada
+    PTF_Face1,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    2,                        !- Identificador da face
+    3,                        !- Referencia para uma das p-faces associadas
+    2,                        !- Referencia para o laco associado
+    2,                        !- Referencia para a superficie associada
+    PTF_Face2,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    3,                        !- Identificador da face
+    5,                        !- Referencia para uma das p-faces associadas
+    3,                        !- Referencia para o laco associado
+    3,                        !- Referencia para a superficie associada
+    PTF_Face2,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    4,                        !- Identificador da face
+    7,                        !- Referencia para uma das p-faces associadas
+    4,                        !- Referencia para o laco associado
+    4,                        !- Referencia para a superficie associada
+    PTF_Face2,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    5,                        !- Identificador da face
+    9,                        !- Referencia para uma das p-faces associadas
+    5,                        !- Referencia para o laco associado
+    5,                        !- Referencia para a superficie associada
+    PTF_Face2,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    6,                        !- Identificador da face
+    11,                       !- Referencia para uma das p-faces associadas
+    6,                        !- Referencia para o laco associado
+    6,                        !- Referencia para a superficie associada
+    PTF_Face2,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    ;                         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    7,                        !- Identificador da face
+    13,                       !- Referencia para uma das p-faces associadas
+    8,                        !- Referencia para o laco associado
+    7,                        !- Referencia para a superficie associada
+    PTF_Face1,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face7;          !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    8,                        !- Identificador da face
+    15,                       !- Referencia para uma das p-faces associadas
+    9,                        !- Referencia para o laco associado
+    8,                        !- Referencia para a superficie associada
+    PTF_Face8,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face8;          !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    9,                        !- Identificador da face
+    17,                       !- Referencia para uma das p-faces associadas
+    10,                       !- Referencia para o laco associado
+    9,                        !- Referencia para a superficie associada
+    PTF_Face8,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face9;          !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    10,                       !- Identificador da face
+    19,                       !- Referencia para uma das p-faces associadas
+    11,                       !- Referencia para o laco associado
+    10,                       !- Referencia para a superficie associada
+    PTF_Face8,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face10;         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    11,                       !- Identificador da face
+    21,                       !- Referencia para uma das p-faces associadas
+    12,                       !- Referencia para o laco associado
+    11,                       !- Referencia para a superficie associada
+    PTF_Face8,                !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face11;         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    12,                       !- Identificador da face
+    23,                       !- Referencia para uma das p-faces associadas
+    13,                       !- Referencia para o laco associado
+    12,                       !- Referencia para a superficie associada
+    PTF_Face12,               !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    ,                         !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face12;         !- Referencia para o fator de forma da zona
+
+  Domus:Face,
+    13,                       !- Identificador da face
+    25,                       !- Referencia para uma das p-faces associadas
+    15,                       !- Referencia para o laco associado
+    13,                       !- Referencia para a superficie associada
+    PTF_Face13,               !- Referencia para as prop. termo-fisicas
+    ElemDes_Face1,            !- Referencia para as prop. de desenho
+    Rel_Face1,                !- Opcoes de relatorios
+    PropAber_Face13,          !- Propriedades de abertura (se janela ou porta)
+    FatorForm_Face13;         !- Referencia para o fator de forma da zona
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:VERTICE ===========
+
+  Domus:Vertice,
+    1,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    1,                        !- Referencia para o pai deste vertice
+    1;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    2,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    2,                        !- Referencia para o pai deste vertice
+    2;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    3,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    3,                        !- Referencia para o pai deste vertice
+    3;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    4,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    4,                        !- Referencia para o pai deste vertice
+    4;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    5,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    5,                        !- Referencia para o pai deste vertice
+    5;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    6,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    6,                        !- Referencia para o pai deste vertice
+    6;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    7,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    7,                        !- Referencia para o pai deste vertice
+    7;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    8,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    8,                        !- Referencia para o pai deste vertice
+    8;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    9,                        !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    9,                        !- Referencia para o pai deste vertice
+    9;                        !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    10,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    10,                       !- Referencia para o pai deste vertice
+    10;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    11,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    11,                       !- Referencia para o pai deste vertice
+    11;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    12,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    12,                       !- Referencia para o pai deste vertice
+    12;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    13,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    13,                       !- Referencia para o pai deste vertice
+    13;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    14,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    14,                       !- Referencia para o pai deste vertice
+    14;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    15,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    15,                       !- Referencia para o pai deste vertice
+    15;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    16,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    16,                       !- Referencia para o pai deste vertice
+    16;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    17,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    17,                       !- Referencia para o pai deste vertice
+    18;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    18,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    18,                       !- Referencia para o pai deste vertice
+    20;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    19,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    19,                       !- Referencia para o pai deste vertice
+    22;                       !-  Referencia para a geometria desse vertice (ponto)
+
+  Domus:Vertice,
+    20,                       !- Identificador do vertice
+    1,                        !- Tipo do pai desse vertice (p-vertice ou p-face)
+    20,                       !- Referencia para o pai deste vertice
+    24;                       !-  Referencia para a geometria desse vertice (ponto)
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PVERTICE ===========
+
+  Domus:PVertice,
+    1,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    1,                        !- Referencia para o pai deste vertice
+    1;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    2,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    2,                        !- Referencia para o pai deste vertice
+    2;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    3,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    3,                        !- Referencia para o pai deste vertice
+    3;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    4,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    4,                        !- Referencia para o pai deste vertice
+    4;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    5,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    5,                        !- Referencia para o pai deste vertice
+    5;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    6,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    6,                        !- Referencia para o pai deste vertice
+    6;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    7,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    7,                        !- Referencia para o pai deste vertice
+    7;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    8,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    8,                        !- Referencia para o pai deste vertice
+    8;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    9,                        !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    13,                       !- Referencia para o pai deste vertice
+    9;                        !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    10,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    13,                       !- Referencia para o pai deste vertice
+    10;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    11,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    14,                       !- Referencia para o pai deste vertice
+    11;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    12,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    15,                       !- Referencia para o pai deste vertice
+    12;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    13,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    17,                       !- Referencia para o pai deste vertice
+    13;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    14,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    19,                       !- Referencia para o pai deste vertice
+    14;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    15,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    20,                       !- Referencia para o pai deste vertice
+    15;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    16,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    22,                       !- Referencia para o pai deste vertice
+    16;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    17,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    25,                       !- Referencia para o pai deste vertice
+    17;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    18,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    25,                       !- Referencia para o pai deste vertice
+    18;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    19,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    26,                       !- Referencia para o pai deste vertice
+    19;                       !-  Referencia para o vertice desse p-vertice
+
+  Domus:PVertice,
+    20,                       !- Identificador do p-vertice
+    2,                        !- Tipo do pai desse p-vertice (aresta ou p-aresta)
+    27,                       !- Referencia para o pai deste vertice
+    20;                       !-  Referencia para o vertice desse p-vertice
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:ARESTA ===========
+
+  Domus:Aresta,
+    1,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    1,                        !- Referencia para o pai dessa aresta
+    2,                        !- Referencia para o primeiro p-vertice
+    1,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    2,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    2,                        !- Referencia para o pai dessa aresta
+    3,                        !- Referencia para o primeiro p-vertice
+    2,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    3,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    3,                        !- Referencia para o pai dessa aresta
+    4,                        !- Referencia para o primeiro p-vertice
+    3,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    4,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    4,                        !- Referencia para o pai dessa aresta
+    1,                        !- Referencia para o primeiro p-vertice
+    4,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    5,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    5,                        !- Referencia para o pai dessa aresta
+    6,                        !- Referencia para o primeiro p-vertice
+    5,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    6,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    6,                        !- Referencia para o pai dessa aresta
+    7,                        !- Referencia para o primeiro p-vertice
+    6,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    7,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    7,                        !- Referencia para o pai dessa aresta
+    8,                        !- Referencia para o primeiro p-vertice
+    7,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    8,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    8,                        !- Referencia para o pai dessa aresta
+    5,                        !- Referencia para o primeiro p-vertice
+    8,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    9,                        !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    18,                       !- Referencia para o pai dessa aresta
+    1,                        !- Referencia para o primeiro p-vertice
+    5,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    10,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    12,                       !- Referencia para o pai dessa aresta
+    2,                        !- Referencia para o primeiro p-vertice
+    6,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    11,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    10,                       !- Referencia para o pai dessa aresta
+    3,                        !- Referencia para o primeiro p-vertice
+    7,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    12,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    14,                       !- Referencia para o pai dessa aresta
+    4,                        !- Referencia para o primeiro p-vertice
+    8,                        !- Referencia para o segundo p-vertice
+    1;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    13,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    25,                       !- Referencia para o pai dessa aresta
+    10,                       !- Referencia para o primeiro p-vertice
+    9,                        !- Referencia para o segundo p-vertice
+    2;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    14,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    27,                       !- Referencia para o pai dessa aresta
+    11,                       !- Referencia para o primeiro p-vertice
+    10,                       !- Referencia para o segundo p-vertice
+    2;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    15,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    29,                       !- Referencia para o pai dessa aresta
+    12,                       !- Referencia para o primeiro p-vertice
+    11,                       !- Referencia para o segundo p-vertice
+    2;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    16,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    31,                       !- Referencia para o pai dessa aresta
+    12,                       !- Referencia para o primeiro p-vertice
+    9,                        !- Referencia para o segundo p-vertice
+    2;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    17,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    34,                       !- Referencia para o pai dessa aresta
+    9,                        !- Referencia para o primeiro p-vertice
+    13,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    18,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    36,                       !- Referencia para o pai dessa aresta
+    12,                       !- Referencia para o primeiro p-vertice
+    14,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    19,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    35,                       !- Referencia para o pai dessa aresta
+    13,                       !- Referencia para o primeiro p-vertice
+    14,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    20,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    38,                       !- Referencia para o pai dessa aresta
+    10,                       !- Referencia para o primeiro p-vertice
+    15,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    21,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    39,                       !- Referencia para o pai dessa aresta
+    15,                       !- Referencia para o primeiro p-vertice
+    13,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    22,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    42,                       !- Referencia para o pai dessa aresta
+    11,                       !- Referencia para o primeiro p-vertice
+    16,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    23,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    43,                       !- Referencia para o pai dessa aresta
+    16,                       !- Referencia para o primeiro p-vertice
+    15,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    24,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    47,                       !- Referencia para o pai dessa aresta
+    14,                       !- Referencia para o primeiro p-vertice
+    16,                       !- Referencia para o segundo p-vertice
+    3;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    25,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    53,                       !- Referencia para o pai dessa aresta
+    18,                       !- Referencia para o primeiro p-vertice
+    17,                       !- Referencia para o segundo p-vertice
+    4;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    26,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    55,                       !- Referencia para o pai dessa aresta
+    19,                       !- Referencia para o primeiro p-vertice
+    18,                       !- Referencia para o segundo p-vertice
+    4;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    27,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    57,                       !- Referencia para o pai dessa aresta
+    20,                       !- Referencia para o primeiro p-vertice
+    19,                       !- Referencia para o segundo p-vertice
+    4;                        !- Referencia para a geometria desta aresta (curva)
+
+  Domus:Aresta,
+    28,                       !- Identificador da aresta
+    3,                        !- Tipo do pai dessa aresta (p-aresta ou p-face)
+    59,                       !- Referencia para o pai dessa aresta
+    17,                       !- Referencia para o primeiro p-vertice
+    20,                       !- Referencia para o segundo p-vertice
+    4;                        !- Referencia para a geometria desta aresta (curva)
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PARESTA ===========
+
+  Domus:PAresta,
+    1,                        !- Identificador da p-aresta
+    1,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    1,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    2,                        !- Referencia para o p-vertice inicial
+    4,                        !- Referencia para a proxima p-aresta no ciclo
+    2,                        !- Referencia para a p-aresta anterior no ciclo
+    21,                       !- Referencia para a proxima p-aresta radial
+    21;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    2,                        !- Identificador da p-aresta
+    1,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    2,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    3,                        !- Referencia para o p-vertice inicial
+    1,                        !- Referencia para a proxima p-aresta no ciclo
+    3,                        !- Referencia para a p-aresta anterior no ciclo
+    9,                        !- Referencia para a proxima p-aresta radial
+    9;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    3,                        !- Identificador da p-aresta
+    1,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    3,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    4,                        !- Referencia para o p-vertice inicial
+    2,                        !- Referencia para a proxima p-aresta no ciclo
+    4,                        !- Referencia para a p-aresta anterior no ciclo
+    13,                       !- Referencia para a proxima p-aresta radial
+    13;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    4,                        !- Identificador da p-aresta
+    1,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    4,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    1,                        !- Referencia para o p-vertice inicial
+    3,                        !- Referencia para a proxima p-aresta no ciclo
+    1,                        !- Referencia para a p-aresta anterior no ciclo
+    17,                       !- Referencia para a proxima p-aresta radial
+    17;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    5,                        !- Identificador da p-aresta
+    2,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    5,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    5,                        !- Referencia para o p-vertice inicial
+    6,                        !- Referencia para a proxima p-aresta no ciclo
+    8,                        !- Referencia para a p-aresta anterior no ciclo
+    23,                       !- Referencia para a proxima p-aresta radial
+    23;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    6,                        !- Identificador da p-aresta
+    2,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    6,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    6,                        !- Referencia para o p-vertice inicial
+    7,                        !- Referencia para a proxima p-aresta no ciclo
+    5,                        !- Referencia para a p-aresta anterior no ciclo
+    11,                       !- Referencia para a proxima p-aresta radial
+    11;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    7,                        !- Identificador da p-aresta
+    2,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    7,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    7,                        !- Referencia para o p-vertice inicial
+    8,                        !- Referencia para a proxima p-aresta no ciclo
+    6,                        !- Referencia para a p-aresta anterior no ciclo
+    15,                       !- Referencia para a proxima p-aresta radial
+    15;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    8,                        !- Identificador da p-aresta
+    2,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    8,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    8,                        !- Referencia para o p-vertice inicial
+    5,                        !- Referencia para a proxima p-aresta no ciclo
+    7,                        !- Referencia para a p-aresta anterior no ciclo
+    19,                       !- Referencia para a proxima p-aresta radial
+    19;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    9,                        !- Identificador da p-aresta
+    3,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    2,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    2,                        !- Referencia para o p-vertice inicial
+    10,                       !- Referencia para a proxima p-aresta no ciclo
+    12,                       !- Referencia para a p-aresta anterior no ciclo
+    2,                        !- Referencia para a proxima p-aresta radial
+    2;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    10,                       !- Identificador da p-aresta
+    3,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    11,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    3,                        !- Referencia para o p-vertice inicial
+    11,                       !- Referencia para a proxima p-aresta no ciclo
+    9,                        !- Referencia para a p-aresta anterior no ciclo
+    16,                       !- Referencia para a proxima p-aresta radial
+    16;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    11,                       !- Identificador da p-aresta
+    3,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    6,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    7,                        !- Referencia para o p-vertice inicial
+    12,                       !- Referencia para a proxima p-aresta no ciclo
+    10,                       !- Referencia para a p-aresta anterior no ciclo
+    6,                        !- Referencia para a proxima p-aresta radial
+    6;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    12,                       !- Identificador da p-aresta
+    3,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    10,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    6,                        !- Referencia para o p-vertice inicial
+    9,                        !- Referencia para a proxima p-aresta no ciclo
+    11,                       !- Referencia para a p-aresta anterior no ciclo
+    22,                       !- Referencia para a proxima p-aresta radial
+    22;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    13,                       !- Identificador da p-aresta
+    4,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    3,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    3,                        !- Referencia para o p-vertice inicial
+    14,                       !- Referencia para a proxima p-aresta no ciclo
+    16,                       !- Referencia para a p-aresta anterior no ciclo
+    3,                        !- Referencia para a proxima p-aresta radial
+    3;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    14,                       !- Identificador da p-aresta
+    4,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    12,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    4,                        !- Referencia para o p-vertice inicial
+    15,                       !- Referencia para a proxima p-aresta no ciclo
+    13,                       !- Referencia para a p-aresta anterior no ciclo
+    20,                       !- Referencia para a proxima p-aresta radial
+    20;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    15,                       !- Identificador da p-aresta
+    4,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    7,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    8,                        !- Referencia para o p-vertice inicial
+    16,                       !- Referencia para a proxima p-aresta no ciclo
+    14,                       !- Referencia para a p-aresta anterior no ciclo
+    7,                        !- Referencia para a proxima p-aresta radial
+    7;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    16,                       !- Identificador da p-aresta
+    4,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    11,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    7,                        !- Referencia para o p-vertice inicial
+    13,                       !- Referencia para a proxima p-aresta no ciclo
+    15,                       !- Referencia para a p-aresta anterior no ciclo
+    10,                       !- Referencia para a proxima p-aresta radial
+    10;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    17,                       !- Identificador da p-aresta
+    5,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    4,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    4,                        !- Referencia para o p-vertice inicial
+    18,                       !- Referencia para a proxima p-aresta no ciclo
+    20,                       !- Referencia para a p-aresta anterior no ciclo
+    4,                        !- Referencia para a proxima p-aresta radial
+    4;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    18,                       !- Identificador da p-aresta
+    5,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    9,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    1,                        !- Referencia para o p-vertice inicial
+    19,                       !- Referencia para a proxima p-aresta no ciclo
+    17,                       !- Referencia para a p-aresta anterior no ciclo
+    24,                       !- Referencia para a proxima p-aresta radial
+    24;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    19,                       !- Identificador da p-aresta
+    5,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    8,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    5,                        !- Referencia para o p-vertice inicial
+    20,                       !- Referencia para a proxima p-aresta no ciclo
+    18,                       !- Referencia para a p-aresta anterior no ciclo
+    8,                        !- Referencia para a proxima p-aresta radial
+    8;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    20,                       !- Identificador da p-aresta
+    5,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    12,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    8,                        !- Referencia para o p-vertice inicial
+    17,                       !- Referencia para a proxima p-aresta no ciclo
+    19,                       !- Referencia para a p-aresta anterior no ciclo
+    14,                       !- Referencia para a proxima p-aresta radial
+    14;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    21,                       !- Identificador da p-aresta
+    6,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    1,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    1,                        !- Referencia para o p-vertice inicial
+    22,                       !- Referencia para a proxima p-aresta no ciclo
+    24,                       !- Referencia para a p-aresta anterior no ciclo
+    1,                        !- Referencia para a proxima p-aresta radial
+    1;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    22,                       !- Identificador da p-aresta
+    6,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    10,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    2,                        !- Referencia para o p-vertice inicial
+    23,                       !- Referencia para a proxima p-aresta no ciclo
+    21,                       !- Referencia para a p-aresta anterior no ciclo
+    12,                       !- Referencia para a proxima p-aresta radial
+    12;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    23,                       !- Identificador da p-aresta
+    6,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    5,                        !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    6,                        !- Referencia para o p-vertice inicial
+    24,                       !- Referencia para a proxima p-aresta no ciclo
+    22,                       !- Referencia para a p-aresta anterior no ciclo
+    5,                        !- Referencia para a proxima p-aresta radial
+    5;                        !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    24,                       !- Identificador da p-aresta
+    6,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    9,                        !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    5,                        !- Referencia para o p-vertice inicial
+    21,                       !- Referencia para a proxima p-aresta no ciclo
+    23,                       !- Referencia para a p-aresta anterior no ciclo
+    18,                       !- Referencia para a proxima p-aresta radial
+    18;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    25,                       !- Identificador da p-aresta
+    7,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    13,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    10,                       !- Referencia para o p-vertice inicial
+    32,                       !- Referencia para a proxima p-aresta no ciclo
+    28,                       !- Referencia para a p-aresta anterior no ciclo
+    37,                       !- Referencia para a proxima p-aresta radial
+    26;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    26,                       !- Identificador da p-aresta
+    8,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    13,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    9,                        !- Referencia para o p-vertice inicial
+    27,                       !- Referencia para a proxima p-aresta no ciclo
+    31,                       !- Referencia para a p-aresta anterior no ciclo
+    25,                       !- Referencia para a proxima p-aresta radial
+    37;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    27,                       !- Identificador da p-aresta
+    8,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    14,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    10,                       !- Referencia para o p-vertice inicial
+    29,                       !- Referencia para a proxima p-aresta no ciclo
+    26,                       !- Referencia para a p-aresta anterior no ciclo
+    41,                       !- Referencia para a proxima p-aresta radial
+    28;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    28,                       !- Identificador da p-aresta
+    7,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    14,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    11,                       !- Referencia para o p-vertice inicial
+    25,                       !- Referencia para a proxima p-aresta no ciclo
+    30,                       !- Referencia para a p-aresta anterior no ciclo
+    27,                       !- Referencia para a proxima p-aresta radial
+    41;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    29,                       !- Identificador da p-aresta
+    8,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    15,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    11,                       !- Referencia para o p-vertice inicial
+    31,                       !- Referencia para a proxima p-aresta no ciclo
+    27,                       !- Referencia para a p-aresta anterior no ciclo
+    45,                       !- Referencia para a proxima p-aresta radial
+    30;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    30,                       !- Identificador da p-aresta
+    7,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    15,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    12,                       !- Referencia para o p-vertice inicial
+    28,                       !- Referencia para a proxima p-aresta no ciclo
+    32,                       !- Referencia para a p-aresta anterior no ciclo
+    29,                       !- Referencia para a proxima p-aresta radial
+    45;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    31,                       !- Identificador da p-aresta
+    8,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    16,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    12,                       !- Referencia para o p-vertice inicial
+    26,                       !- Referencia para a proxima p-aresta no ciclo
+    29,                       !- Referencia para a p-aresta anterior no ciclo
+    33,                       !- Referencia para a proxima p-aresta radial
+    32;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    32,                       !- Identificador da p-aresta
+    7,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    16,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    9,                        !- Referencia para o p-vertice inicial
+    30,                       !- Referencia para a proxima p-aresta no ciclo
+    25,                       !- Referencia para a p-aresta anterior no ciclo
+    31,                       !- Referencia para a proxima p-aresta radial
+    33;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    33,                       !- Identificador da p-aresta
+    9,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    16,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    12,                       !- Referencia para o p-vertice inicial
+    34,                       !- Referencia para a proxima p-aresta no ciclo
+    36,                       !- Referencia para a p-aresta anterior no ciclo
+    32,                       !- Referencia para a proxima p-aresta radial
+    31;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    34,                       !- Identificador da p-aresta
+    9,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    17,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    9,                        !- Referencia para o p-vertice inicial
+    35,                       !- Referencia para a proxima p-aresta no ciclo
+    33,                       !- Referencia para a p-aresta anterior no ciclo
+    40,                       !- Referencia para a proxima p-aresta radial
+    40;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    35,                       !- Identificador da p-aresta
+    9,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    19,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    13,                       !- Referencia para o p-vertice inicial
+    36,                       !- Referencia para a proxima p-aresta no ciclo
+    34,                       !- Referencia para a p-aresta anterior no ciclo
+    49,                       !- Referencia para a proxima p-aresta radial
+    49;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    36,                       !- Identificador da p-aresta
+    9,                        !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    18,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    14,                       !- Referencia para o p-vertice inicial
+    33,                       !- Referencia para a proxima p-aresta no ciclo
+    35,                       !- Referencia para a p-aresta anterior no ciclo
+    46,                       !- Referencia para a proxima p-aresta radial
+    46;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    37,                       !- Identificador da p-aresta
+    10,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    13,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    9,                        !- Referencia para o p-vertice inicial
+    38,                       !- Referencia para a proxima p-aresta no ciclo
+    40,                       !- Referencia para a p-aresta anterior no ciclo
+    26,                       !- Referencia para a proxima p-aresta radial
+    25;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    38,                       !- Identificador da p-aresta
+    10,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    20,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    10,                       !- Referencia para o p-vertice inicial
+    39,                       !- Referencia para a proxima p-aresta no ciclo
+    37,                       !- Referencia para a p-aresta anterior no ciclo
+    44,                       !- Referencia para a proxima p-aresta radial
+    44;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    39,                       !- Identificador da p-aresta
+    10,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    21,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    15,                       !- Referencia para o p-vertice inicial
+    40,                       !- Referencia para a proxima p-aresta no ciclo
+    38,                       !- Referencia para a p-aresta anterior no ciclo
+    50,                       !- Referencia para a proxima p-aresta radial
+    50;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    40,                       !- Identificador da p-aresta
+    10,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    17,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    13,                       !- Referencia para o p-vertice inicial
+    37,                       !- Referencia para a proxima p-aresta no ciclo
+    39,                       !- Referencia para a p-aresta anterior no ciclo
+    34,                       !- Referencia para a proxima p-aresta radial
+    34;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    41,                       !- Identificador da p-aresta
+    11,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    14,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    10,                       !- Referencia para o p-vertice inicial
+    42,                       !- Referencia para a proxima p-aresta no ciclo
+    44,                       !- Referencia para a p-aresta anterior no ciclo
+    28,                       !- Referencia para a proxima p-aresta radial
+    27;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    42,                       !- Identificador da p-aresta
+    11,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    22,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    11,                       !- Referencia para o p-vertice inicial
+    43,                       !- Referencia para a proxima p-aresta no ciclo
+    41,                       !- Referencia para a p-aresta anterior no ciclo
+    48,                       !- Referencia para a proxima p-aresta radial
+    48;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    43,                       !- Identificador da p-aresta
+    11,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    23,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    16,                       !- Referencia para o p-vertice inicial
+    44,                       !- Referencia para a proxima p-aresta no ciclo
+    42,                       !- Referencia para a p-aresta anterior no ciclo
+    51,                       !- Referencia para a proxima p-aresta radial
+    51;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    44,                       !- Identificador da p-aresta
+    11,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    20,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    15,                       !- Referencia para o p-vertice inicial
+    41,                       !- Referencia para a proxima p-aresta no ciclo
+    43,                       !- Referencia para a p-aresta anterior no ciclo
+    38,                       !- Referencia para a proxima p-aresta radial
+    38;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    45,                       !- Identificador da p-aresta
+    12,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    15,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    11,                       !- Referencia para o p-vertice inicial
+    46,                       !- Referencia para a proxima p-aresta no ciclo
+    48,                       !- Referencia para a p-aresta anterior no ciclo
+    30,                       !- Referencia para a proxima p-aresta radial
+    29;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    46,                       !- Identificador da p-aresta
+    12,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    18,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    12,                       !- Referencia para o p-vertice inicial
+    47,                       !- Referencia para a proxima p-aresta no ciclo
+    45,                       !- Referencia para a p-aresta anterior no ciclo
+    36,                       !- Referencia para a proxima p-aresta radial
+    36;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    47,                       !- Identificador da p-aresta
+    12,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    24,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    14,                       !- Referencia para o p-vertice inicial
+    48,                       !- Referencia para a proxima p-aresta no ciclo
+    46,                       !- Referencia para a p-aresta anterior no ciclo
+    52,                       !- Referencia para a proxima p-aresta radial
+    52;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    48,                       !- Identificador da p-aresta
+    12,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    22,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    16,                       !- Referencia para o p-vertice inicial
+    45,                       !- Referencia para a proxima p-aresta no ciclo
+    47,                       !- Referencia para a p-aresta anterior no ciclo
+    42,                       !- Referencia para a proxima p-aresta radial
+    42;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    49,                       !- Identificador da p-aresta
+    13,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    19,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    14,                       !- Referencia para o p-vertice inicial
+    50,                       !- Referencia para a proxima p-aresta no ciclo
+    52,                       !- Referencia para a p-aresta anterior no ciclo
+    35,                       !- Referencia para a proxima p-aresta radial
+    35;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    50,                       !- Identificador da p-aresta
+    13,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    21,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    13,                       !- Referencia para o p-vertice inicial
+    51,                       !- Referencia para a proxima p-aresta no ciclo
+    49,                       !- Referencia para a p-aresta anterior no ciclo
+    39,                       !- Referencia para a proxima p-aresta radial
+    39;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    51,                       !- Identificador da p-aresta
+    13,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    23,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    15,                       !- Referencia para o p-vertice inicial
+    52,                       !- Referencia para a proxima p-aresta no ciclo
+    50,                       !- Referencia para a p-aresta anterior no ciclo
+    43,                       !- Referencia para a proxima p-aresta radial
+    43;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    52,                       !- Identificador da p-aresta
+    13,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    24,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    16,                       !- Referencia para o p-vertice inicial
+    49,                       !- Referencia para a proxima p-aresta no ciclo
+    51,                       !- Referencia para a p-aresta anterior no ciclo
+    47,                       !- Referencia para a proxima p-aresta radial
+    47;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    53,                       !- Identificador da p-aresta
+    15,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    25,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    18,                       !- Referencia para o p-vertice inicial
+    59,                       !- Referencia para a proxima p-aresta no ciclo
+    56,                       !- Referencia para a p-aresta anterior no ciclo
+    54,                       !- Referencia para a proxima p-aresta radial
+    54;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    54,                       !- Identificador da p-aresta
+    14,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    25,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    17,                       !- Referencia para o p-vertice inicial
+    55,                       !- Referencia para a proxima p-aresta no ciclo
+    60,                       !- Referencia para a p-aresta anterior no ciclo
+    53,                       !- Referencia para a proxima p-aresta radial
+    53;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    55,                       !- Identificador da p-aresta
+    14,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    26,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    18,                       !- Referencia para o p-vertice inicial
+    57,                       !- Referencia para a proxima p-aresta no ciclo
+    54,                       !- Referencia para a p-aresta anterior no ciclo
+    56,                       !- Referencia para a proxima p-aresta radial
+    56;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    56,                       !- Identificador da p-aresta
+    15,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    26,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    19,                       !- Referencia para o p-vertice inicial
+    53,                       !- Referencia para a proxima p-aresta no ciclo
+    58,                       !- Referencia para a p-aresta anterior no ciclo
+    55,                       !- Referencia para a proxima p-aresta radial
+    55;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    57,                       !- Identificador da p-aresta
+    14,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    27,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    19,                       !- Referencia para o p-vertice inicial
+    60,                       !- Referencia para a proxima p-aresta no ciclo
+    55,                       !- Referencia para a p-aresta anterior no ciclo
+    58,                       !- Referencia para a proxima p-aresta radial
+    58;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    58,                       !- Identificador da p-aresta
+    15,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    27,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    20,                       !- Referencia para o p-vertice inicial
+    56,                       !- Referencia para a proxima p-aresta no ciclo
+    59,                       !- Referencia para a p-aresta anterior no ciclo
+    57,                       !- Referencia para a proxima p-aresta radial
+    57;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    59,                       !- Identificador da p-aresta
+    15,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    28,                       !- Referencia para o filho
+    0,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    17,                       !- Referencia para o p-vertice inicial
+    58,                       !- Referencia para a proxima p-aresta no ciclo
+    53,                       !- Referencia para a p-aresta anterior no ciclo
+    60,                       !- Referencia para a proxima p-aresta radial
+    60;                       !- Referencia para a p-aresta radial anterior
+
+  Domus:PAresta,
+    60,                       !- Identificador da p-aresta
+    14,                       !- Referencia para o laco da qual faz parte (existe caso degenerado)
+    2,                        !- Tipo do filho desta p-aresta (aresta ou p-vertice)
+    28,                       !- Referencia para o filho
+    1,                        !- Orientacao desta p-aresta (mesma ou oposta)
+    20,                       !- Referencia para o p-vertice inicial
+    54,                       !- Referencia para a proxima p-aresta no ciclo
+    57,                       !- Referencia para a p-aresta anterior no ciclo
+    59,                       !- Referencia para a proxima p-aresta radial
+    59;                       !- Referencia para a p-aresta radial anterior
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:LACO ===========
+
+  Domus:Laco,
+    1,                        !- Identificador do laco
+    7,                        !- Referencia para o proximo laco (caso exista)
+    1,                        !- Referencia para a face deste laco
+    1;                        !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    2,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    2,                        !- Referencia para a face deste laco
+    5;                        !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    3,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    3,                        !- Referencia para a face deste laco
+    9;                        !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    4,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    4,                        !- Referencia para a face deste laco
+    13;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    5,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    5,                        !- Referencia para a face deste laco
+    17;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    6,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    6,                        !- Referencia para a face deste laco
+    21;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    7,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    1,                        !- Referencia para a face deste laco
+    32;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    8,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    7,                        !- Referencia para a face deste laco
+    31;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    9,                        !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    8,                        !- Referencia para a face deste laco
+    33;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    10,                       !- Identificador do laco
+    14,                       !- Referencia para o proximo laco (caso exista)
+    9,                        !- Referencia para a face deste laco
+    37;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    11,                       !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    10,                       !- Referencia para a face deste laco
+    41;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    12,                       !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    11,                       !- Referencia para a face deste laco
+    45;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    13,                       !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    12,                       !- Referencia para a face deste laco
+    49;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    14,                       !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    9,                        !- Referencia para a face deste laco
+    60;                       !-  Referencia para p-aresta inicial deste laco
+
+  Domus:Laco,
+    15,                       !- Identificador do laco
+    0,                        !- Referencia para o proximo laco (caso exista)
+    13,                       !- Referencia para a face deste laco
+    59;                       !-  Referencia para p-aresta inicial deste laco
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PFACE ===========
+
+  Domus:PFace,
+    1,                        !- Identificador da p-face
+    3,                        !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    1,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    2;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    2,                        !- Identificador da p-face
+    4,                        !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    1,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    1;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    3,                        !- Identificador da p-face
+    5,                        !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    2,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    4;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    4,                        !- Identificador da p-face
+    6,                        !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    2,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    3;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    5,                        !- Identificador da p-face
+    7,                        !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    3,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    6;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    6,                        !- Identificador da p-face
+    8,                        !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    3,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    5;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    7,                        !- Identificador da p-face
+    9,                        !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    4,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    8;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    8,                        !- Identificador da p-face
+    10,                       !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    4,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    7;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    9,                        !- Identificador da p-face
+    11,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    5,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    10;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    10,                       !- Identificador da p-face
+    12,                       !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    5,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    9;                        !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    11,                       !- Identificador da p-face
+    15,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    6,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    12;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    12,                       !- Identificador da p-face
+    14,                       !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    6,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    11;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    13,                       !- Identificador da p-face
+    26,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    7,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    14;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    14,                       !- Identificador da p-face
+    0,                        !- Referencia para a proxima p-face (pode nao existir)
+    3,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    7,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    13;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    15,                       !- Identificador da p-face
+    17,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    8,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    16;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    16,                       !- Identificador da p-face
+    18,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    8,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    15;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    17,                       !- Identificador da p-face
+    19,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    9,                        !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    18;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    18,                       !- Identificador da p-face
+    20,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    9,                        !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    17;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    19,                       !- Identificador da p-face
+    21,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    10,                       !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    20;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    20,                       !- Identificador da p-face
+    22,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    10,                       !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    19;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    21,                       !- Identificador da p-face
+    23,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    11,                       !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    22;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    22,                       !- Identificador da p-face
+    24,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    11,                       !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    21;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    23,                       !- Identificador da p-face
+    25,                       !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    12,                       !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    24;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    24,                       !- Identificador da p-face
+    13,                       !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    12,                       !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    23;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    25,                       !- Identificador da p-face
+    0,                        !- Referencia para a proxima p-face (pode nao existir)
+    2,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    13,                       !-  Referencia para o filho desta p-aresta
+    0,                        !- Orientacao desta p-pface (mesma ou oposta)
+    26;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+  Domus:PFace,
+    26,                       !- Identificador da p-face
+    0,                        !- Referencia para a proxima p-face (pode nao existir)
+    4,                        !- Referencia para a shell desta p-face
+    5,                        !-  Tipo do filho desta p-aresta (face, vertice ou aresta)
+    13,                       !-  Referencia para o filho desta p-aresta
+    1,                        !- Orientacao desta p-pface (mesma ou oposta)
+    25;                       !- Referencia para a p-face par desta p-face (pode nao existir)
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:SHELL ===========
+
+  Domus:Shell,
+    1,                        !- Identificador da shell
+    2,                        !- Referencia para a proxima shell (caso exista)
+    1,                        !- Referencia para a regiao desta shell
+    0;                        !-  Referencia para a primeira p-face desta shell
+
+  Domus:Shell,
+    2,                        !- Identificador da shell
+    0,                        !- Referencia para a proxima shell (caso exista)
+    1,                        !- Referencia para a regiao desta shell
+    1;                        !-  Referencia para a primeira p-face desta shell
+
+  Domus:Shell,
+    3,                        !- Identificador da shell
+    0,                        !- Referencia para a proxima shell (caso exista)
+    2,                        !- Referencia para a regiao desta shell
+    2;                        !-  Referencia para a primeira p-face desta shell
+
+  Domus:Shell,
+    4,                        !- Identificador da shell
+    0,                        !- Referencia para a proxima shell (caso exista)
+    3,                        !- Referencia para a regiao desta shell
+    16;                       !-  Referencia para a primeira p-face desta shell
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO ===========
+
+  Domus:Regiao,
+    1,                        !- Identificador da regiao
+    Infinita,                 !- Nome da regiao
+    2,                        !- Referencia para a proxima regiao (caso exista)
+    1,                        !- Referencia para a shell periferica desta regiao
+    1,                        !-  Referencia para o volume desta regiao
+    Param_Regiao1,            !-  Referencia para os parametros da zona
+    Rel_Regiao1,              !-  Referencia para as configuracoes de relatorio
+    ,                         !-  Referencia para a mobilia
+    ,                         !-  Referencia para os ganhos internos
+    ,                         !-  Referencia para os equipamentos photo-voltaicos
+    ,                         !-  Referencia para os atuadores da zona
+    Vent_Regiao1,             !-  Referencia para a ventilacao da zona
+    Ativ_Regiao1;             !-  Referencia para as atividades da zona
+
+  Domus:Regiao,
+    2,                        !- Identificador da regiao
+    Solo 01,                  !- Nome da regiao
+    3,                        !- Referencia para a proxima regiao (caso exista)
+    3,                        !- Referencia para a shell periferica desta regiao
+    2,                        !-  Referencia para o volume desta regiao
+    Param_Regiao1,            !-  Referencia para os parametros da zona
+    Rel_Regiao2,              !-  Referencia para as configuracoes de relatorio
+    ,                         !-  Referencia para a mobilia
+    ,                         !-  Referencia para os ganhos internos
+    ,                         !-  Referencia para os equipamentos photo-voltaicos
+    ,                         !-  Referencia para os atuadores da zona
+    Vent_Regiao2,             !-  Referencia para a ventilacao da zona
+    Ativ_Regiao1;             !-  Referencia para as atividades da zona
+
+  Domus:Regiao,
+    3,                        !- Identificador da regiao
+    Zone 1,                   !- Nome da regiao
+    0,                        !- Referencia para a proxima regiao (caso exista)
+    4,                        !- Referencia para a shell periferica desta regiao
+    3,                        !-  Referencia para o volume desta regiao
+    Param_Regiao3,            !-  Referencia para os parametros da zona
+    Rel_Regiao3,              !-  Referencia para as configuracoes de relatorio
+    ,                         !-  Referencia para a mobilia
+    GanhoI_Regiao3,           !-  Referencia para os ganhos internos
+    ,                         !-  Referencia para os equipamentos photo-voltaicos
+    Atuadores_Regiao3,        !-  Referencia para os atuadores da zona
+    Vent_Regiao3,             !-  Referencia para a ventilacao da zona
+    Ativ_Regiao1;             !-  Referencia para as atividades da zona
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PONTO ===========
+
+  Domus:Ponto,
+    1,                        !- Identificador do ponto
+    -8,                       !- Coordenada x
+    0,                        !- Coordenada y
+    -8;                       !- Coordenada z
+
+  Domus:Ponto,
+    2,                        !- Identificador do ponto
+    8,                        !- Coordenada x
+    0,                        !- Coordenada y
+    -8;                       !- Coordenada z
+
+  Domus:Ponto,
+    3,                        !- Identificador do ponto
+    8,                        !- Coordenada x
+    0,                        !- Coordenada y
+    8;                        !- Coordenada z
+
+  Domus:Ponto,
+    4,                        !- Identificador do ponto
+    -8,                       !- Coordenada x
+    0,                        !- Coordenada y
+    8;                        !- Coordenada z
+
+  Domus:Ponto,
+    5,                        !- Identificador do ponto
+    -8,                       !- Coordenada x
+    -4,                       !- Coordenada y
+    -8;                       !- Coordenada z
+
+  Domus:Ponto,
+    6,                        !- Identificador do ponto
+    8,                        !- Coordenada x
+    -4,                       !- Coordenada y
+    -8;                       !- Coordenada z
+
+  Domus:Ponto,
+    7,                        !- Identificador do ponto
+    8,                        !- Coordenada x
+    -4,                       !- Coordenada y
+    8;                        !- Coordenada z
+
+  Domus:Ponto,
+    8,                        !- Identificador do ponto
+    -8,                       !- Coordenada x
+    -4,                       !- Coordenada y
+    8;                        !- Coordenada z
+
+  Domus:Ponto,
+    9,                        !- Identificador do ponto
+    -4,                       !- Coordenada x
+    0,                        !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    10,                       !- Identificador do ponto
+    4,                        !- Coordenada x
+    0,                        !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    11,                       !- Identificador do ponto
+    4,                        !- Coordenada x
+    0,                        !- Coordenada y
+    -3;                       !- Coordenada z
+
+  Domus:Ponto,
+    12,                       !- Identificador do ponto
+    -4,                       !- Coordenada x
+    0,                        !- Coordenada y
+    -3;                       !- Coordenada z
+
+  Domus:Ponto,
+    13,                       !- Identificador do ponto
+    -4,                       !- Coordenada x
+    2.7002,                   !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    14,                       !- Identificador do ponto
+    -4,                       !- Coordenada x
+    2.7002,                   !- Coordenada y
+    -3;                       !- Coordenada z
+
+  Domus:Ponto,
+    15,                       !- Identificador do ponto
+    4,                        !- Coordenada x
+    2.7002,                   !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    16,                       !- Identificador do ponto
+    4,                        !- Coordenada x
+    2.7002,                   !- Coordenada y
+    -3;                       !- Coordenada z
+
+  Domus:Ponto,
+    17,                       !- Identificador do ponto
+    -3.49935,                 !- Coordenada x
+    2.20375,                  !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    18,                       !- Identificador do ponto
+    -3.7043,                  !- Coordenada x
+    2.6282,                   !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    19,                       !- Identificador do ponto
+    3.50065,                  !- Coordenada x
+    2.20375,                  !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    20,                       !- Identificador do ponto
+    3.7043,                   !- Coordenada x
+    2.6282,                   !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    21,                       !- Identificador do ponto
+    3.50065,                  !- Coordenada x
+    0.50375,                  !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    22,                       !- Identificador do ponto
+    3.7043,                   !- Coordenada x
+    0.071825,                 !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    23,                       !- Identificador do ponto
+    -3.49935,                 !- Coordenada x
+    0.50375,                  !- Coordenada y
+    3;                        !- Coordenada z
+
+  Domus:Ponto,
+    24,                       !- Identificador do ponto
+    -3.7043,                  !- Coordenada x
+    0.071825,                 !- Coordenada y
+    3;                        !- Coordenada z
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:CURVA ===========
+
+  Domus:Curva,
+    1,                        !- Identificador da curva
+    0;                        !- Tipo da curva
+
+  Domus:Curva,
+    2,                        !- Identificador da curva
+    0;                        !- Tipo da curva
+
+  Domus:Curva,
+    3,                        !- Identificador da curva
+    0;                        !- Tipo da curva
+
+  Domus:Curva,
+    4,                        !- Identificador da curva
+    0;                        !- Tipo da curva
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:SUPERFICIE ===========
+
+  Domus:Superficie,
+    1,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    1,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    0;                        !- Coordenada D do plano
+
+  Domus:Superficie,
+    2,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    -1,                       !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -1;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    3,                        !- Identificador da superficie
+    1,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -5;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    4,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    1,                        !- Coordenada C do plano
+    -5;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    5,                        !- Identificador da superficie
+    -1,                       !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -5;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    6,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    -1,                       !- Coordenada C do plano
+    -5;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    7,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    1,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -0;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    8,                        !- Identificador da superficie
+    -1,                       !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -4;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    9,                        !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    1,                        !- Coordenada C do plano
+    -3;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    10,                       !- Identificador da superficie
+    1,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -4;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    11,                       !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    -1,                       !- Coordenada C do plano
+    -3;                       !- Coordenada D do plano
+
+  Domus:Superficie,
+    12,                       !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    1,                        !- Coordenada B do plano
+    0,                        !- Coordenada C do plano
+    -2.7002;                  !- Coordenada D do plano
+
+  Domus:Superficie,
+    13,                       !- Identificador da superficie
+    0,                        !- Coordenada A do plano
+    0,                        !- Coordenada B do plano
+    1,                        !- Coordenada C do plano
+    -3;                       !- Coordenada D do plano
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:NORTE ===========
+
+  Domus:Norte,
+    0.62376,                  !- Coordenada x
+    0,                        !- Coordenada y
+    0.78162;                  !- Coordenada z
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:VOLUME ===========
+
+  Domus:Volume,
+    1,                        !- Identificador do volume
+    0;                        !- Tipo do preenchimento do volume
+
+  Domus:Volume,
+    2,                        !- Identificador do volume
+    1;                        !- Tipo do preenchimento do volume
+
+  Domus:Volume,
+    3,                        !- Identificador do volume
+    2;                        !- Tipo do preenchimento do volume
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:ELEMENTODESENHO ===========
+
+  Domus:ElementoDesenho,
+    ElemDes_Face1,            !- Nome do objeto
+    1,                        !- Se a cor eh padrao
+    0,                        !- Valor do canal vermelho
+    0,                        !- Valor do canal verde
+    0,                        !- Valor do canal azul
+    1,                        !- Valor do canal alpha
+    ,                         !- Nome da cor
+    1;                        !- Se eh visivel 
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF:VIDRO:R ===========
+
+  Domus:Face:PTF:Vidro:R,
+    PTF_Face13,               !- Nome do objeto
+    0,                        !- Opcao de vidro (simples, duplo ou triplo)
+    1,                        !- Modelo do vidro (de acordo com base de dados)
+    0.84,                     !- Emissividade
+    0,                        !- Tela contra mosquito
+    1,                        !- Coeficientes de protecao solar
+    0.5,                      !- Espessura
+    2,                        !- Opcao de entrada dados vidro (Optico,Glazing,SimpleGlazing)
+    SingleGlazing_PTF_Face13, !- Propriedades por Single Glazing
+    Glazing_PTF_Face13,       !- Propriedades por Glazing
+    1,                        !- Numero de camadas
+    Vidro,                    !- Material da camada 1
+    10,                       !- Numero de nos da camada 1
+    35;                       !- Espessura da camada 1
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF:VIDRO:R:SIMPLEGLAZING ===========
+
+  Domus:Face:PTF:Vidro:R:SimpleGlazing,
+    SingleGlazing_PTF_Face13, !- Nome do objeto
+    5.942,                    !- U-Factor {W/m2-K}
+    0.76,                     !- Solar Heat Gain Coefficient
+    0.74;                     !- Visible Transmittance
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF:VIDRO:R:GLAZING ===========
+
+  Domus:Face:PTF:Vidro:R:Glazing,
+    Glazing_PTF_Face13,       !- Nome do objeto
+    0.686,                    !- Solar Transmittance at Normal Incidence
+    0.0551,                   !- Front Side Solar Reflectance at Normal Incidence
+    0.0551,                   !- Back Side Solar Reflectance at Normal Incidence
+    0.74,                     !- Visible Transmittance at Normal Incidence
+    0.1403,                   !- Front Side Visible Reflectance at Normal Incidence
+    0.1493,                   !- Back Side Visible Reflectance at Normal Incidence
+    0.84,                     !- Front and Back Side Infrared Hemispherical Emissivity
+    0.4042;                   !- Conductivity {W/m-K} effective
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF ===========
+
+  Domus:Face:PTF,
+    PTF_Face1,                !- Nome do objeto
+    4,                        !- Padrao de composicao
+    ModelSimul_PTF_Face1,     !- Metodo simulacao
+    0.5,                      !- Absortividade interna
+    0.5,                      !- Absortividade externa
+    0.6,                      !- Emissividade interna
+    0.6,                      !- Emissividade externa
+    2e-10,                    !- Permeancia interna
+    9e-10,                    !- Permeancia externa
+    ParamCoefConv_PTF_Face1,  !- Paramentros coef de conveccao	
+    3,                        !- Numero de camadas
+    Solo,                     !- Material da camada 1
+    10,                       !- Numero de nos da camada 1
+    2000,                     !- Espessura da camada 1
+    Concreto,                 !- Material da camada 2
+    10,                       !- Numero de nos da camada 2
+    50,                       !- Espessura da camada 2
+    Madeira de Lei,           !- Material da camada 3
+    5,                        !- Numero de nos da camada 3
+    20;                       !- Espessura da camada 3
+
+  Domus:Face:PTF,
+    PTF_Face2,                !- Nome do objeto
+    4,                        !- Padrao de composicao
+    ModelSimul_PTF_Face1,     !- Metodo simulacao
+    0.5,                      !- Absortividade interna
+    0.5,                      !- Absortividade externa
+    0.6,                      !- Emissividade interna
+    0.6,                      !- Emissividade externa
+    2e-10,                    !- Permeancia interna
+    9e-10,                    !- Permeancia externa
+    ParamCoefConv_PTF_Face1,  !- Paramentros coef de conveccao	
+    1,                        !- Numero de camadas
+    Solo,                     !- Material da camada 1
+    10,                       !- Numero de nos da camada 1
+    2000;                     !- Espessura da camada 1
+
+  Domus:Face:PTF,
+    PTF_Face8,                !- Nome do objeto
+    0,                        !- Padrao de composicao
+    ModelSimul_PTF_Face1,     !- Metodo simulacao
+    0.5,                      !- Absortividade interna
+    0.5,                      !- Absortividade externa
+    0.5,                      !- Emissividade interna
+    0.5,                      !- Emissividade externa
+    5e-07,                    !- Permeancia interna
+    5e-07,                    !- Permeancia externa
+    ParamCoefConv_PTF_Face8,  !- Paramentros coef de conveccao	
+    1,                        !- Numero de camadas
+    Tijolo 6 Furos Quadrados Deitado (14 cm), !- Material da camada 1
+    14,                       !- Numero de nos da camada 1
+    140;                      !- Espessura da camada 1
+
+  Domus:Face:PTF,
+    PTF_Face12,               !- Nome do objeto
+    0,                        !- Padrao de composicao
+    ModelSimul_PTF_Face1,     !- Metodo simulacao
+    0.5,                      !- Absortividade interna
+    0.5,                      !- Absortividade externa
+    0.5,                      !- Emissividade interna
+    0.5,                      !- Emissividade externa
+    5e-07,                    !- Permeancia interna
+    5e-07,                    !- Permeancia externa
+    ParamCoefConv_PTF_Face8,  !- Paramentros coef de conveccao	
+    3,                        !- Numero de camadas
+    Telha de fibro-cimento,   !- Material da camada 1
+    5,                        !- Numero de nos da camada 1
+    10,                       !- Espessura da camada 1
+    Camara_Ar_Espessa_Alta_Emissiv, !- Material da camada 2
+    5,                        !- Numero de nos da camada 2
+    50,                       !- Espessura da camada 2
+    Gesso ABNT,               !- Material da camada 3
+    5,                        !- Numero de nos da camada 3
+    30;                       !- Espessura da camada 3
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:RELATORIO ===========
+
+  Domus:Face:Relatorio,
+    Rel_Face1,                !- Nome do objeto
+    0,                        !- Esta sendo monitorada
+    0,                        !- Monitora temperatura
+    0,                        !- Monitora umidade
+    0,                        !- Monitora pressao parcial vapor
+    0,                        !- Monitora fluxo calor
+    0,                        !- Monitora fluxo vapor
+    0,                        !- Monitora radiacoes
+    0,                        !- Monitora mofo
+    0;                        !- Monitora condicoes de contorno
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:INTERVALOS:TEMPO ===========
+
+  Domus:Intervalos:Tempo,
+    Interv_Res_CT_Rel_Regiao1, !- Nome do objeto
+    1,                        !- Numero de intervalos
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    0,                        !- Hora inicial
+    0,                        !- Segundo inicial
+    0,                        !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366;                      !- Dia final
+
+  Domus:Intervalos:Tempo,
+    Interv_Res_CT_Rel_Regiao3, !- Nome do objeto
+    1,                        !- Numero de intervalos
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    0,                        !- Hora inicial
+    0,                        !- Segundo inicial
+    23,                       !- Hora final
+    59,                       !- Segundo final
+    366,                      !- Dia inicial
+    366;                      !- Dia final
+
+  Domus:Intervalos:Tempo,
+    Interv_Equip1_GanhoI_Regiao3, !- Nome do objeto
+    2,                        !- Numero de intervalos
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    9,                        !- Hora inicial
+    0,                        !- Segundo inicial
+    12,                       !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366,                      !- Dia final
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    13,                       !- Hora inicial
+    0,                        !- Segundo inicial
+    18,                       !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366;                      !- Dia final
+
+  Domus:Intervalos:Tempo,
+    Interv_Ilum3_GanhoI_Regiao3, !- Nome do objeto
+    2,                        !- Numero de intervalos
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    8,                        !- Hora inicial
+    0,                        !- Segundo inicial
+    12,                       !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366,                      !- Dia final
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    13,                       !- Hora inicial
+    0,                        !- Segundo inicial
+    17,                       !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366;                      !- Dia final
+
+  Domus:Intervalos:Tempo,
+    Interv_Ac1_Atuadores_Regiao3, !- Nome do objeto
+    1,                        !- Numero de intervalos
+    4,                        !- Periodo anual
+    7,                        !- Periodo semanal
+    9,                        !- Hora inicial
+    0,                        !- Segundo inicial
+    18,                       !- Hora final
+    0,                        !- Segundo final
+    366,                      !- Dia inicial
+    366;                      !- Dia final
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:CONFIG:ABAS ===========
+
+  Domus:Config:Abas,
+    Abas_PropAber_Face13,     !- Nome do objeto
+    0,                        !- Parametro AE1
+    0,                        !- Parametro AE2
+    0,                        !- Parametro AE3
+    0,                        !- Parametro AE4
+    0,                        !- Parametro AS1
+    0,                        !- Parametro AS2
+    0,                        !- Parametro AS3
+    0,                        !- Parametro AS4
+    0,                        !- Parametro AD1
+    0,                        !- Parametro AD2
+    0,                        !- Parametro AD3
+    0,                        !- Parametro AD4
+    0;                        !- Numero pontos da base
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PROP:ABERTURA ===========
+
+  Domus:Prop:Abertura,
+    PropAber_Face13,          !- Nome do objeto
+    0,                        !- Esquadria codigo cor
+    0,                        !- Esquadria codigo material
+    0.15,                     !- Area de esquadria
+    10,                       !- Transmitancia da esquadria
+    0,                        !- Absortividade da esquadria
+    0,                        !- Resistividade da esquadria
+    0,                        !- Emissividade da esquadria
+    100,                      !- Percentual de abertura
+    ,                         !- Intervalos de abertura
+    Abas_PropAber_Face13;     !- Configuracao das abas
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:PARAM ===========
+
+  Domus:Regiao:Param,
+    Param_Regiao1,            !- Nome do objeto
+    0,                        !- Habilita a pre-simulacao
+    20,                       !- Temperatura inicial interna
+    50,                       !- Umidade inicial interna
+    0,                        !- Fixar temperatura inicial
+    0,                        !- Fixar umidade inicial
+    0,                        !- Controle da temp. e umidade da zona (livre=0)
+    0,                        !- Copiar temp. e umidade da zona
+    teste.ti,                 !- Arquivo climatico interno
+    5,                        !- Modelo de umidade
+    0.25,                     !- Grau de saturacao
+    1,                        !- Atualizacao das sombras (quantos passos de tempo)
+    20,                       !- Clima senoidal - temperatura media
+    5,                        !- Clima senoidal - amplitude pico anual
+    5,                        !- Clima senoidal - amplitude pico diaria
+    60,                       !- Clima senoidal - umidade media
+    10;                       !- Clima senoidal - amplitude pico diaria
+
+  Domus:Regiao:Param,
+    Param_Regiao3,            !- Nome do objeto
+    0,                        !- Habilita a pre-simulacao
+    20,                       !- Temperatura inicial interna
+    50,                       !- Umidade inicial interna
+    0,                        !- Fixar temperatura inicial
+    0,                        !- Fixar umidade inicial
+    0,                        !- Controle da temp. e umidade da zona (livre=0)
+    0,                        !- Copiar temp. e umidade da zona
+    teste.ti,                 !- Arquivo climatico interno
+    1,                        !- Modelo de umidade
+    0.25,                     !- Grau de saturacao
+    1,                        !- Atualizacao das sombras (quantos passos de tempo)
+    20,                       !- Clima senoidal - temperatura media
+    5,                        !- Clima senoidal - amplitude pico anual
+    5,                        !- Clima senoidal - amplitude pico diaria
+    60,                       !- Clima senoidal - umidade media
+    10;                       !- Clima senoidal - amplitude pico diaria
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:RELATORIO:PMV_PPD ===========
+
+  Domus:Regiao:Relatorio:PMV_PPD,
+    PMVPPD_Rel_Regiao1,       !- Nome do objeto
+    0,                        !- Tipo de atividade
+    0,                        !- Parametro - valor do clo
+    0,                        !- Parametro - tipo de atividade (met)
+    0,                        !- Parametro - velocidade do ar (m/s)
+    0,                        !- Vestimenta 1
+    0,                        !- Vestimenta 2
+    0,                        !- Vestimenta 3
+    0,                        !- Vestimenta 4
+    0,                        !- Vestimenta 5
+    0,                        !- Vestimenta 6
+    0,                        !- Vestimenta 7
+    0,                        !- Vestimenta 8
+    0,                        !- Vestimenta 9
+    0,                        !- Vestimenta 10
+    0,                        !- Vestimenta 11
+    0,                        !- Vestimenta 12
+    0,                        !- Vestimenta 13
+    0,                        !- Vestimenta 14
+    0,                        !- Vestimenta 15
+    0,                        !- Vestimenta 16
+    0,                        !- Vestimenta 17
+    0,                        !- Vestimenta 18
+    0,                        !- Vestimenta 19
+    0,                        !- Vestimenta 20
+    0;                        !- Vestimenta 21
+
+  Domus:Regiao:Relatorio:PMV_PPD,
+    PMVPPD_Rel_Regiao3,       !- Nome do objeto
+    0,                        !- Tipo de atividade
+    0.66,                     !- Parametro - valor do clo
+    0.79,                     !- Parametro - tipo de atividade (met)
+    0.01,                     !- Parametro - velocidade do ar (m/s)
+    0,                        !- Vestimenta 1
+    0,                        !- Vestimenta 2
+    0,                        !- Vestimenta 3
+    0,                        !- Vestimenta 4
+    0,                        !- Vestimenta 5
+    0,                        !- Vestimenta 6
+    0,                        !- Vestimenta 7
+    0,                        !- Vestimenta 8
+    0,                        !- Vestimenta 9
+    0,                        !- Vestimenta 10
+    0,                        !- Vestimenta 11
+    0,                        !- Vestimenta 12
+    0,                        !- Vestimenta 13
+    0,                        !- Vestimenta 14
+    0,                        !- Vestimenta 15
+    0,                        !- Vestimenta 16
+    0,                        !- Vestimenta 17
+    0,                        !- Vestimenta 18
+    0,                        !- Vestimenta 19
+    0,                        !- Vestimenta 20
+    0;                        !- Vestimenta 21
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:RELATORIO:CT ===========
+
+  Domus:Regiao:Relatorio:CT,
+    CT_Rel_Regiao1,           !- Nome do objeto
+    1,                        !- Ativar carga termica resfriamento
+    24,                       !- Temperatura desligamento resfriamento
+    50,                       !- Umidade desligamento resfriamento
+    1,                        !- Ativar carga termica aquecimento
+    22,                       !- Temperatura desligamento aquecimento
+    60,                       !- Umidade desligamento aquecimento
+    Interv_Res_CT_Rel_Regiao1, !- Intervalos de resfriamento
+    Interv_Res_CT_Rel_Regiao1; !- Intervalos de aquecimento
+
+  Domus:Regiao:Relatorio:CT,
+    CT_Rel_Regiao2,           !- Nome do objeto
+    1,                        !- Ativar carga termica resfriamento
+    24,                       !- Temperatura desligamento resfriamento
+    50,                       !- Umidade desligamento resfriamento
+    1,                        !- Ativar carga termica aquecimento
+    22,                       !- Temperatura desligamento aquecimento
+    60,                       !- Umidade desligamento aquecimento
+    Interv_Res_CT_Rel_Regiao1, !- Intervalos de resfriamento
+    Interv_Res_CT_Rel_Regiao1; !- Intervalos de aquecimento
+
+  Domus:Regiao:Relatorio:CT,
+    CT_Rel_Regiao3,           !- Nome do objeto
+    1,                        !- Ativar carga termica resfriamento
+    24,                       !- Temperatura desligamento resfriamento
+    50,                       !- Umidade desligamento resfriamento
+    1,                        !- Ativar carga termica aquecimento
+    22,                       !- Temperatura desligamento aquecimento
+    60,                       !- Umidade desligamento aquecimento
+    Interv_Res_CT_Rel_Regiao3, !- Intervalos de resfriamento
+    Interv_Res_CT_Rel_Regiao3; !- Intervalos de aquecimento
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:RELATORIO ===========
+
+  Domus:Regiao:Relatorio,
+    Rel_Regiao1,              !- Nome do objeto
+    0,                        !- Monitorar  zona
+    0,                        !- Monitorar temperatura
+    0,                        !- Monitorar umidade
+    0,                        !- Monitorar pmv e ppd
+    0,                        !- Monitorar consumo energia
+    0,                        !- Monitorar carga termica
+    0,                        !- Monitorar estatisticas
+    0,                        !- Monitorar mofo
+    0,                        !- Monitorar perfil paredes
+    0,                        !- Monitorar ganho termico
+    0,                        !- Monitorar ats
+    0,                        !- Monitorar ace
+    0,                        !- Monitorar sistemas primario/secundario
+    0,                        !- Monitorar fotovoltaico
+    0,                        !- Monitorar controlador
+    0,                        !- Monitorar acs
+    1,                        !- Monitorar propriedades edificacao
+    0,                        !- Monitorar temperatura interna paredes
+    0,                        !- Monitorar calor rejeitado atuador
+    3600,                     !- Amostragem - temperatura
+    3600,                     !- Amostragem - controlador
+    3600,                     !- Amostragem - perfil paredes
+    3600,                     !- Amostragem - periodo mofo
+    3600,                     !- Amostragem - fotovoltaico
+    3600,                     !- Amostragem - sistema primario/secundario
+    CT_Rel_Regiao1,           !- Dados de carga termica	   
+    PMVPPD_Rel_Regiao1;       !- Dados de de pmv e ppd
+
+  Domus:Regiao:Relatorio,
+    Rel_Regiao2,              !- Nome do objeto
+    0,                        !- Monitorar  zona
+    0,                        !- Monitorar temperatura
+    0,                        !- Monitorar umidade
+    0,                        !- Monitorar pmv e ppd
+    0,                        !- Monitorar consumo energia
+    0,                        !- Monitorar carga termica
+    0,                        !- Monitorar estatisticas
+    0,                        !- Monitorar mofo
+    0,                        !- Monitorar perfil paredes
+    0,                        !- Monitorar ganho termico
+    0,                        !- Monitorar ats
+    0,                        !- Monitorar ace
+    0,                        !- Monitorar sistemas primario/secundario
+    0,                        !- Monitorar fotovoltaico
+    0,                        !- Monitorar controlador
+    0,                        !- Monitorar acs
+    1,                        !- Monitorar propriedades edificacao
+    0,                        !- Monitorar temperatura interna paredes
+    0,                        !- Monitorar calor rejeitado atuador
+    3600,                     !- Amostragem - temperatura
+    3600,                     !- Amostragem - controlador
+    3600,                     !- Amostragem - perfil paredes
+    3600,                     !- Amostragem - periodo mofo
+    3600,                     !- Amostragem - fotovoltaico
+    3600,                     !- Amostragem - sistema primario/secundario
+    CT_Rel_Regiao2,           !- Dados de carga termica	   
+    PMVPPD_Rel_Regiao1;       !- Dados de de pmv e ppd
+
+  Domus:Regiao:Relatorio,
+    Rel_Regiao3,              !- Nome do objeto
+    1,                        !- Monitorar  zona
+    1,                        !- Monitorar temperatura
+    0,                        !- Monitorar umidade
+    1,                        !- Monitorar pmv e ppd
+    1,                        !- Monitorar consumo energia
+    0,                        !- Monitorar carga termica
+    0,                        !- Monitorar estatisticas
+    0,                        !- Monitorar mofo
+    0,                        !- Monitorar perfil paredes
+    0,                        !- Monitorar ganho termico
+    0,                        !- Monitorar ats
+    0,                        !- Monitorar ace
+    0,                        !- Monitorar sistemas primario/secundario
+    0,                        !- Monitorar fotovoltaico
+    0,                        !- Monitorar controlador
+    0,                        !- Monitorar acs
+    1,                        !- Monitorar propriedades edificacao
+    0,                        !- Monitorar temperatura interna paredes
+    0,                        !- Monitorar calor rejeitado atuador
+    60,                       !- Amostragem - temperatura
+    3600,                     !- Amostragem - controlador
+    60,                       !- Amostragem - perfil paredes
+    3600,                     !- Amostragem - periodo mofo
+    3600,                     !- Amostragem - fotovoltaico
+    3600,                     !- Amostragem - sistema primario/secundario
+    CT_Rel_Regiao3,           !- Dados de carga termica	   
+    PMVPPD_Rel_Regiao3;       !- Dados de de pmv e ppd
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:GANHOINTERNO:PESSOAS ===========
+
+  Domus:GanhoInterno:Pessoas,
+    Pes4_GanhoI_Regiao3,      !- Nome do objeto
+    2,                        !- Quantidade
+    70,                       !- Massa da pessoa
+    1.7,                      !- Altura da pessoa
+    80,                       !- Calor latente da pessoa
+    60,                       !- Calor sensivel da pessoa
+    80,                       !- Porcentagem convectiva da pessoa
+    0,                        !- Usar fator de ponderacao da ASHRAE
+    8e-05,                    !- Coeficiente de atividade fisica
+    Interv_Equip1_GanhoI_Regiao3; !- Intervalos de tempo
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:GANHOINTERNO:EQUIPAMENTOS ===========
+
+  Domus:GanhoInterno:Equipamentos,
+    Equip1_GanhoI_Regiao3,    !- Nome do objeto
+    2,                        !- Quantidade
+    0,                        !- Calor latente do equipamento
+    55,                       !- Calor sensivel do equipamento
+    80,                       !- Porcentagem convectiva do equipamento
+    0,                        !- Usar fator de ponderacao da ASHRAE
+    55,                       !- Potencia eletrica
+    4,                        !- Identificador
+    Interv_Equip1_GanhoI_Regiao3; !- Intervalos de tempo
+
+  Domus:GanhoInterno:Equipamentos,
+    Equip2_GanhoI_Regiao3,    !- Nome do objeto
+    1,                        !- Quantidade
+    450,                      !- Calor latente do equipamento
+    1050,                     !- Calor sensivel do equipamento
+    80,                       !- Porcentagem convectiva do equipamento
+    0,                        !- Usar fator de ponderacao da ASHRAE
+    1500,                     !- Potencia eletrica
+    17,                       !- Identificador
+    Interv_Equip1_GanhoI_Regiao3; !- Intervalos de tempo
+
+  Domus:GanhoInterno:Equipamentos,
+    Equip5_GanhoI_Regiao3,    !- Nome do objeto
+    1,                        !- Quantidade
+    0,                        !- Calor latente do equipamento
+    10,                       !- Calor sensivel do equipamento
+    80,                       !- Porcentagem convectiva do equipamento
+    0,                        !- Usar fator de ponderacao da ASHRAE
+    10,                       !- Potencia eletrica
+    15,                       !- Identificador
+    Interv_Equip1_GanhoI_Regiao3; !- Intervalos de tempo
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:GANHOINTERNO:ILUMINACAO ===========
+
+  Domus:GanhoInterno:Iluminacao,
+    Ilum3_GanhoI_Regiao3,     !- Nome do objeto
+    1,                        !- Quantidade
+    2,                        !- Potencia
+    80,                       !- Porcentagem convectiva da iluminacao
+    0,                        !- Usar fator de ponderacao da ASHRAE
+    1,                        !- Identificador
+    0,                        !- Usar dados do daysim
+    ,                         !- Caminho do arquivo daysim
+    Interv_Ilum3_GanhoI_Regiao3; !- Intervalos de tempo
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:GANHOSINTERNOS ===========
+
+  Domus:Regiao:GanhosInternos,
+    GanhoI_Regiao3,           !- Nome do objeto
+    5,                        !- Numero de ganhos
+    Equip1_GanhoI_Regiao3,    !- Referencia do ganho 1
+    Equip2_GanhoI_Regiao3,    !- Referencia do ganho 2
+    Ilum3_GanhoI_Regiao3,     !- Referencia do ganho 3
+    Pes4_GanhoI_Regiao3,      !- Referencia do ganho 4
+    Equip5_GanhoI_Regiao3;    !- Referencia do ganho 5
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:ATUADORES ===========
+
+  Domus:Atuadores,
+    Atuadores_Regiao3,        !- Nome do objeto
+    1,                        !- Numero de atuadores
+    Ac1_Atuadores_Regiao3;    !- Referencia para o atuador 1
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:ATUADOR:ARCONDICIONADO ===========
+
+  Domus:Atuador:ArCondicionado,
+    Ac1_Atuadores_Regiao3,    !- Nome do objeto
+    1,                        !- Quantidade
+    1,                        !- Tipo de equipamento
+    5,                        !- Caracteristicas fisicas
+    0,                        !- Tipo de temperatura
+    0,                        !- Tipo de aquecimento
+    0,                        !- Tipo de condensador
+    1,                        !- Regulamentado pelo imetro
+    1,                        !- Condensador sombreado
+    10500,                    !- Potencia
+    0.678803,                 !- Fator correcao capacidade total 1 
+    0.050035,                 !- Fator correcao capacidade total 2 
+    -0.00086,                 !- Fator correcao capacidade total 3 
+    -0.02175,                 !- Fator correcao capacidade total 4 
+    -0.00016,                 !- Fator correcao capacidade total 5 
+    0.000933,                 !- Fator correcao capacidade total 5 
+    7.63483,                  !- Energy input ratio nominal
+    1.38847,                  !- Fator correcao para eficiencia energetica 1 
+    0.077,                    !- Fator correcao para eficiencia energetica 2 
+    -0.00093,                 !- Fator correcao para eficiencia energetica 3 
+    -0.05426,                 !- Fator correcao para eficiencia energetica 4 
+    0.000274,                 !- Fator correcao para eficiencia energetica 5 
+    0.000145,                 !- Fator correcao para eficiencia energetica 6 
+    7373.94,                  !- Calor sensivel nominal
+    -2.05444,                 !- Fator correcao para capacidade sensivel 1
+    0.254437,                 !- Fator correcao para capacidade sensivel 2
+    -0.0052,                  !- Fator correcao para capacidade sensivel 3
+    -0.00023,                 !- Fator correcao para capacidade sensivel 4
+    -0.00032,                 !- Fator correcao para capacidade sensivel 5
+    0.000522,                 !- Fator correcao para capacidade sensivel 6
+    416.7,                    !- Vazao do volume de ar
+    9,                        !- Temperatura evaporacao do ar condicionado
+    1,                        !- Tipo de controlador (on-off=0, pid=1)
+    24,                       !- Parametro 1 do controlador
+    2,                        !- Parametro 2 do controlador
+    0,                        !- Parametro 3 do controlador
+    0,                        !- Parametro 4 do controlador
+    0,                        !- Parametro 5 do controlador
+    Interv_Ac1_Atuadores_Regiao3, !- Intervalos de tempo
+    0,                        !- Fixar Condicoes Externas
+    0,                        !- Temperatura Externa Fixa (C)	   
+    0,                        !- Umidade Relativa Externa Fixa	   
+    0,                        !- Fixar Condicoes Internas
+    0,                        !- Temperatura Interna Fixa (C)	   
+    0;                        !- Umidade Relativa Interna Fixa	   
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:VENTILACAO ===========
+
+  Domus:Regiao:Ventilacao,
+    Vent_Regiao1,             !- Nome do objeto
+    0,                        !- Habilita ventilacao natural
+    0,                        !- Modelo de ventilacao natural
+    0,                        !- Tipo de calculo do CP (0=CP medio parede, 1=pos. abertura)
+    0,                        !- Wind velocity profile exponent
+    0.0,                      !- Surrounding Building Height (m)
+    0.0,                      !- Plan Area Density (%)
+    0,                        !- Habilita ventilacao forcada
+    0,                        !- Tipo de calculo (1=por pessoas, 0=por trocas de ar)
+    0.0,                      !- Racao de ar ou trocas de ar
+    0,                        !- Quantidade de pessoas
+    ;                         !- Intervalos de tempo
+
+  Domus:Regiao:Ventilacao,
+    Vent_Regiao2,             !- Nome do objeto
+    0,                        !- Habilita ventilacao natural
+    0,                        !- Modelo de ventilacao natural
+    0,                        !- Tipo de calculo do CP (0=CP medio parede, 1=pos. abertura)
+    0,                        !- Wind velocity profile exponent
+    0.0,                      !- Surrounding Building Height (m)
+    0.0,                      !- Plan Area Density (%)
+    0,                        !- Habilita ventilacao forcada
+    0,                        !- Tipo de calculo (1=por pessoas, 0=por trocas de ar)
+    0.0,                      !- Racao de ar ou trocas de ar
+    0,                        !- Quantidade de pessoas
+    ;                         !- Intervalos de tempo
+
+  Domus:Regiao:Ventilacao,
+    Vent_Regiao3,             !- Nome do objeto
+    1,                        !- Habilita ventilacao natural
+    3,                        !- Modelo de ventilacao natural
+    0,                        !- Tipo de calculo do CP (0=CP medio parede, 1=pos. abertura)
+    2,                        !- Wind velocity profile exponent
+    2.5,                      !- Surrounding Building Height (m)
+    0,                        !- Plan Area Density (%)
+    0,                        !- Habilita ventilacao forcada
+    0,                        !- Tipo de calculo (1=por pessoas, 0=por trocas de ar)
+    0.0,                      !- Racao de ar ou trocas de ar
+    0,                        !- Quantidade de pessoas
+    ;                         !- Intervalos de tempo
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:DADOSRTQ ===========
+
+  Domus:DadosRTQ,
+    Sem Proprietario,         !- Proprietario
+    Sem nome,                 !- Nome
+    Sem endereço,             !- Endereco
+    Sem complemento,          !- Complemento
+    Sem cidade,               !- Cidade
+    Sem Zona Bioclimática,    !- Zona bioclimatica
+    Sem Bairro,               !- Bairro
+    Sem UF,                   !- Unidade da Federacao
+    Sem CEP,                  !- CEP
+    Sem data,                 !- Data
+    0,                        !- POC
+    0,                        !- Bonificacao 1
+    0,                        !- Bonificacao 2
+    0,                        !- Bonificacao 3
+    0,                        !- Bonificacao 4
+    0,                        !- Bonificacao 5
+    0;                        !- Bonificacao 6
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:REGIAO:ATIVIDADE ===========
+
+  Domus:Regiao:Atividade,
+    Ativ_Regiao1,             !- Nome do objeto
+    0,                        !- Atividade principal
+    0,                        !- Transitoria
+    Zona padrão,              !- Nome da atividade
+    0.8,                      !- K limite
+    10.2,                     !- DPI A
+    12.24,                    !- DPI B
+    14.28,                    !- DPI C
+    16.32,                    !- DPI D
+    6;                        !- RCR
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:HVAC:MONIT:CONSUMO ===========
+
+  Domus:HVAC:Monit:Consumo,
+    0,                        !- Monitorar o sistema HVAC
+    3600,                     !- Passo tempo relatorios HVAC
+    0,                        !- Monitorar consumo sistema HVAC
+    0,                        !- Sistema primario - dado 1
+    0,                        !- Sistema primario - dado 2
+    0,                        !- Sistema primario - dado 3
+    0,                        !- Sistema primario - dado 4
+    0,                        !- Sistema primario - dado 5
+    0,                        !- Sistema primario - dado 6
+    1,                        !- Sistema primario - dado 7
+    0,                        !- Sistema primario - dado 8
+    0,                        !- Sistema primario - dado 9
+    Interv_Res_CT_Rel_Regiao1, !- Intervalos de resfriamento
+    Interv_Res_CT_Rel_Regiao1; !- Intervalos de aquecimento
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:MATERIAL ===========
+
+  Domus:Material,
+    Camara_Ar_Espessa_Alta_Emissiv, !- Nome do material
+    1.2,                      !- Densidade de matriz solida
+    0.18,                     !- Porosidade
+    1,                        !- Calor especifico
+    7.14,                     !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Reboco.mat,               !- Nome do arquivo de dados
+    RebocoISO.mat,            !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Concreto,                 !- Nome do material
+    2200,                     !- Densidade de matriz solida
+    0.5,                      !- Porosidade
+    1000,                     !- Calor especifico
+    1.75,                     !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Bloc_Con.mat,             !- Nome do arquivo de dados
+    Bloc_ConISO.mat,          !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Gesso ABNT,               !- Nome do material
+    1200,                     !- Densidade de matriz solida
+    0.5,                      !- Porosidade
+    840,                      !- Calor especifico
+    0.0285,                   !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Gesso.mat,                !- Nome do arquivo de dados
+    GessoISO.mat,             !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Madeira de Lei,           !- Nome do material
+    720,                      !- Densidade de matriz solida
+    0.5,                      !- Porosidade
+    1255,                     !- Calor especifico
+    0.16,                     !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Mad_Com.mat,              !- Nome do arquivo de dados
+    Mad_ComISO.mat,           !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Solo,                     !- Nome do material
+    2050,                     !- Densidade de matriz solida
+    0.5,                      !- Porosidade
+    1840,                     !- Calor especifico
+    0.52,                     !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Tijolo.mat,               !- Nome do arquivo de dados
+    TijoloISO.mat,            !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Telha de fibro-cimento,   !- Nome do material
+    1900,                     !- Densidade de matriz solida
+    0.9,                      !- Porosidade
+    840,                      !- Calor especifico
+    0.95,                     !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Telha.mat,                !- Nome do arquivo de dados
+    TelhaISO.mat,             !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Tijolo 6 Furos Quadrados Deitado (14 cm), !- Nome do material
+    1124.7,                   !- Densidade de matriz solida
+    0.29,                     !- Porosidade
+    637.2,                    !- Calor especifico
+    0.618,                    !- Condutibilidade termica
+    500,                      !- Tamanho do arquivo de isotermas
+    0.002,                    !- Granularidade das isotermas
+    Tijolo.mat,               !- Nome do arquivo de dados
+    TijoloISO.mat,            !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+  Domus:Material,
+    Vidro,                    !- Nome do material
+    2500,                     !- Densidade de matriz solida
+    0.5,                      !- Porosidade
+    750,                      !- Calor especifico
+    1.4,                      !- Condutibilidade termica
+    0,                        !- Tamanho do arquivo de isotermas
+    0,                        !- Granularidade das isotermas
+    0,                        !- Nome do arquivo de dados
+    0,                        !- Nome do arquivo de isotermas
+    0,                        !- Funcao isotermas
+    0;                        !- Origem do material
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:MATERIAIS ===========
+
+  Domus:Materiais,
+    8,                        !- Numero de materiais
+    Camara_Ar_Espessa_Alta_Emissiv, !- Nome do material
+    Concreto,                 !- Nome do material	  
+    Gesso ABNT,               !- Nome do material	  
+    Madeira de Lei,           !- Nome do material
+    Solo,                     !- Nome do material	  
+    Telha de fibro-cimento,   !- Nome do material	  
+    Tijolo 6 Furos Quadrados Deitado (14 cm), !- Nome do material
+    Vidro;                    !- Nome do material	  
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:PIXELCOUNTCONFIG ===========
+
+  Domus:PixelCountConfig,
+    7,                        !- Intervalo de dias
+    20,                       !- Intervalo de horas (em min)
+    512,                      !- Dimensao na horizontal
+    512,                      !- Dimensao na vertical
+    0,                        !- Metodo (1 (flag 0) ou 2 fases (flag 1))
+    -1,                       !- Passo de tempo do relatorio (-1 -> igual sim.)
+    2;                        !- Lados a calcular (externo (0), interno (1) ou ambos (2))
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:LOCAL ===========
+
+  Domus:Local,
+    Rondonópolis,             !- Nome da cidade
+    Brasil,                   !- Pais		
+    -16.47,                   !- Latitude {deg}
+    -54.64,                   !- Longitude {deg}
+    -4,                       !- GMT {hr}
+    97.91,                    !- Pressao atmosferica {kPa}
+    284;                      !- Altitude {m}
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:FATORFORMA ===========
+
+  Domus:Face:FatorForma,
+    FatorForm_Face7,          !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.106842,                 !- Fator de Forma
+    13,                       !- Nome Parede Alvo
+    0.0829745,                !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    0.0616046,                !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.106842,                 !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.146086,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.494143;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face8,          !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    13,                       !- Nome Parede Alvo
+    0.0764901,                !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    0.0808009,                !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.0668245,                !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.150042,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.316546,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.316546;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face9,          !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.134934,                 !- Fator de Forma
+    13,                       !- Nome Parede Alvo
+    4.32616e-32,              !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.137003,                 !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.118917,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.307013,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.304798;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face10,         !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.0668245,                !- Fator de Forma
+    13,                       !- Nome Parede Alvo
+    0.0765211,                !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    0.0820401,                !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.150042,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.316546,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.316546;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face11,         !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.112531,                 !- Fator de Forma
+    13,                       !- Nome Parede Alvo
+    0.0724533,                !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    0.0534075,                !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.112531,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.324613,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.324613;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face12,         !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.106842,                 !- Fator de Forma
+    13,                       !- Nome Parede Alvo
+    0.083177,                 !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    0.0620522,                !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.106842,                 !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.146086,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.494143;                 !- Fator de Forma
+
+  Domus:Face:FatorForma,
+    FatorForm_Face13,         !- Nome do objeto
+    6,                        !- Numero de Fatores de Forma
+    8,                        !- Nome Parede Alvo
+    0.104137,                 !- Fator de Forma
+    9,                        !- Nome Parede Alvo
+    3.52693e-32,              !- Fator de Forma
+    10,                       !- Nome Parede Alvo
+    0.104179,                 !- Fator de Forma
+    11,                       !- Nome Parede Alvo
+    0.131521,                 !- Fator de Forma
+    12,                       !- Nome Parede Alvo
+    0.335504,                 !- Fator de Forma
+    7,                        !- Nome Parede Alvo
+    0.334687;                 !- Fator de Forma
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF:MODELOSIMULACAO ===========
+
+  Domus:Face:PTF:ModeloSimulacao,
+    ModelSimul_PTF_Face1,     !- Nome do objeto
+    0,                        !- Modelo Simulacao
+    1,                        !- Nivel de Simplificacao
+    ;                         !- Referencia para o objeto de Modelo com Interface Externa (EMI)
+
+!-   ===========  ALL OBJECTS IN CLASS: DOMUS:FACE:PTF:PARAMCOEFCONV ===========
+
+  Domus:Face:PTF:ParamCoefConv,
+    ParamCoefConv_PTF_Face1,  !- Nome do objeto
+    0,                        !- Calcular coeficiente conveccao interno
+    0,                        !- Calcular coeficiente conveccao externo
+    1,                        !- Calcular coeficiente conveccao interno massa
+    1,                        !- Calcular coeficiente conveccao externo massa
+    3,                        !- Valor coeficiente conveccao interno
+    12,                       !- Valor coeficiente conveccao externo
+    0.00275,                  !- Valor coeficiente conveccao interno massa
+    0.00275,                  !- Valor coeficiente conveccao externo massa
+    0,                        !- Tipo de coeficiente (natural = 0, forcado = 1)
+    0,                        !- Velocidade do ar
+    0,                        !- Coeficiente de convec. interno A (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. interno C (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. interno n (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo A (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo C (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo n (Yazdanian e Klems)
+    0,                        !- Calcular coeficiente convec. interno YK
+    0,                        !- Calcular coeficiente convec. externo YK
+    5e+07,                    !- Residuo conveccao massa interna
+    5e+07;                    !- Residuo conveccao massa externo
+
+  Domus:Face:PTF:ParamCoefConv,
+    ParamCoefConv_PTF_Face8,  !- Nome do objeto
+    0,                        !- Calcular coeficiente conveccao interno
+    0,                        !- Calcular coeficiente conveccao externo
+    1,                        !- Calcular coeficiente conveccao interno massa
+    1,                        !- Calcular coeficiente conveccao externo massa
+    3,                        !- Valor coeficiente conveccao interno
+    12,                       !- Valor coeficiente conveccao externo
+    0.00275,                  !- Valor coeficiente conveccao interno massa
+    0.00275,                  !- Valor coeficiente conveccao externo massa
+    0,                        !- Tipo de coeficiente (natural = 0, forcado = 1)
+    0,                        !- Velocidade do ar
+    0,                        !- Coeficiente de convec. interno A (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. interno C (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. interno n (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo A (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo C (Yazdanian e Klems)
+    0,                        !- Coeficiente de convec. externo n (Yazdanian e Klems)
+    0,                        !- Calcular coeficiente convec. interno YK
+    0,                        !- Calcular coeficiente convec. externo YK
+    0,                        !- Residuo conveccao massa interna
+    0;                        !- Residuo conveccao massa externo

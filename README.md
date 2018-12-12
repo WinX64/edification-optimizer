@@ -1,1 +1,1 @@
-# edification-optimizer
+# Edification Optimizer

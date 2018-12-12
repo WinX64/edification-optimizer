@@ -1,0 +1,33 @@
+r,Domus:Norte,Domus:Norte,;
+i,Domus:Norte,{1},0,{2};
+r,Domus:Ponto,Identificador do ponto,18;
+r,Domus:Ponto,Identificador do ponto,20;
+r,Domus:Ponto,Identificador do ponto,22;
+r,Domus:Ponto,Identificador do ponto,24;
+i,Domus:Ponto,18,{3},{6},3;
+i,Domus:Ponto,20,{4},{6},3;
+i,Domus:Ponto,22,{4},{5},3;
+i,Domus:Ponto,24,{3},{5},3;
+r,Domus:Intervalos:Tempo,Nome do objeto,Interv_Ac1_Atuadores_Regiao3;
+i,Domus:Intervalos:Tempo,Interv_Ac1_Atuadores_Regiao3,1,4,7,{7},0,{8},0,366,366;
+r,Domus:Face:PTF,Nome do objeto,PTF_Face8;
+r,Domus:Face:PTF,Nome do objeto,PTF_Face12;
+i,Domus:Face:PTF,PTF_Face8,0,ModelSimul_PTF_Face1,0.5,0.5,0.5,0.5,5e-07,5e-07,ParamCoefConv_PTF_Face8,{9};
+i,Domus:Face:PTF,PTF_Face12,0,ModelSimul_PTF_Face1,0.5,0.5,0.5,0.5,5e-07,5e-07,ParamCoefConv_PTF_Face8,{10};
+r,Domus:Materiais,Domus:Materiais,;
+{11}
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;
+r,Domus:Material,Domus:Material,;{12}

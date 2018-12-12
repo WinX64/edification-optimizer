@@ -1,25 +1,25 @@
 classdef (Abstract) Algorithm < matlab.mixin.Heterogeneous & handle
-    %ALGORITHM Classe base de algoritmo
-    %   Classe base para implementação de algoritmo no módulo de otimização
+    %ALGORITHM Base algorithm class
+    %   Base class for algorithm implementations to be used on the
+    %   optimization application
     
     properties (Abstract)
-        %Prefixo do algorithm. Ex.: GA
+        %Prefix of the algorithm. Eg.: GA
         prefix;
         
-        %Nome do algoritmo. Ex.: Genetic Algorithm
+        %Name of the algorithm. Eg.: Genetic Algorithm
         name;
     end
     
     methods (Abstract)
-        %Método para o registro dos componentes na janela do módulo de
-        %otimização, referente aos parâmetros especificos do algoritmo.
+        %Register the components for the algorithm's specific parameters on
+        %the algorithm's tab
         [components] = registerComponents(this, tab);
         
-        %Método para a validação dos parâmetros especificos anteriormente a
-        %uma simulação.
+        %Validates the specific arguments before the optimization starts
         [specificArguments, result] = validateArguments(this, generalArguments);
         
-        %Método para a realização da simulação.
+        %Performs the optimization with the specified parameters
         [bestX, bestY] = runOptimization(this, optimFunction, generalArguments, specificArguments);
     end
 end
