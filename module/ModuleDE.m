@@ -1,5 +1,8 @@
-classdef AlgorithmDE < Algorithm
-
+classdef ModuleDE < AlgorithmModule
+    %ModuleDE DE module implementation
+    %   Implementation of the module for the Differential Evolution
+    %   algorithm
+    
     properties
         prefix = 'DE';
         name = 'Differential Evolution';

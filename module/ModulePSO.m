@@ -1,5 +1,8 @@
-classdef AlgorithmPSO < Algorithm
- 
+classdef ModulePSO < AlgorithmModule
+    %ModulePSO PSO module implementation
+    %   Implementation of the module for the Particle Swarm Optimization
+    %   algorithm
+    
     properties
         prefix = 'PSO';
         name = 'Particle Swarm Optimization';

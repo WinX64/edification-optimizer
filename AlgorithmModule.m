@@ -1,5 +1,5 @@
-classdef (Abstract) Algorithm < matlab.mixin.Heterogeneous & handle
-    %ALGORITHM Base algorithm class
+classdef (Abstract) AlgorithmModule < matlab.mixin.Heterogeneous & handle
+    %ALGORITHMMODULE Base algorithm class
     %   Base class for algorithm implementations to be used on the
     %   optimization application
     

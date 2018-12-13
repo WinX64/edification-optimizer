@@ -1,5 +1,8 @@
-classdef AlgorithmGA < Algorithm
-    
+classdef ModuleGA < AlgorithmModule
+    %ModuleGA GA module implementation
+    %   Implementation of the module for the Genetic Algorithm
+    %   algorithm
+        
     properties
         prefix = 'GA';
         name = 'Generic Algorithm';
